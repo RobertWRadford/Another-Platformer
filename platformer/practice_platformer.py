@@ -171,7 +171,7 @@ class InstructionView(arcade.View):
             7: 'Congratulations!'
         }
         level_descript_text = {
-            1: 'A and D to move left and right, SPACE to jump.',
+            1: 'A and D to move left and right, SPACE to jump. R to reset level but keeps time, L to full reset.',
             2: 'You have one jump at a time but can jump mid air.',
             3: 'W and S to move up and down a ladder',
             4: 'You\'ve unlocked double jumping!, you now have two jumps per reset.',
@@ -387,6 +387,9 @@ class GameView(arcade.View):
             self.keys_pressed.add('D')
         elif key == arcade.key.R:
             self.setup(self.level)
+        elif key == arcade.key.L:
+            start_view = InstructionView(1,0)
+            self.window.show_view(start_view)
         elif key == arcade.key.SPACE:
             if self.jump_remaining:
                 self.jump_remaining -= 1

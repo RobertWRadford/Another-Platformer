@@ -1,4 +1,4 @@
-('C:\\Users\\terro\\Documents\\GitHub\\Arcade-Practice\\arcade_practice\\platformer\\build\\practice_platformer\\PYZ-00.pyz',
+('C:\\Users\\terro\\Documents\\GitHub\\Robert\\Another-Platformer\\platformer\\build\\practice_platformer\\PYZ-00.pyz',
  [('win32com',
    'C:\\Users\\terro\\AppData\\Roaming\\Python\\Python38\\site-packages\\win32com\\__init__.py',
    'PYMODULE'),
@@ -716,21 +716,29 @@
    'c:\\program files '
    '(x86)\\python38-32\\lib\\site-packages\\pkg_resources\\__init__.py',
    'PYMODULE'),
+  ('packaging.version',
+   'c:\\program files '
+   '(x86)\\python38-32\\lib\\site-packages\\packaging\\version.py',
+   'PYMODULE'),
   ('packaging._compat',
    'c:\\program files '
    '(x86)\\python38-32\\lib\\site-packages\\packaging\\_compat.py',
    'PYMODULE'),
-  ('packaging._structures',
+  ('packaging.utils',
    'c:\\program files '
-   '(x86)\\python38-32\\lib\\site-packages\\packaging\\_structures.py',
+   '(x86)\\python38-32\\lib\\site-packages\\packaging\\utils.py',
+   'PYMODULE'),
+  ('packaging',
+   'c:\\program files '
+   '(x86)\\python38-32\\lib\\site-packages\\packaging\\__init__.py',
    'PYMODULE'),
   ('packaging._typing',
    'c:\\program files '
    '(x86)\\python38-32\\lib\\site-packages\\packaging\\_typing.py',
    'PYMODULE'),
-  ('packaging.version',
+  ('packaging._structures',
    'c:\\program files '
-   '(x86)\\python38-32\\lib\\site-packages\\packaging\\version.py',
+   '(x86)\\python38-32\\lib\\site-packages\\packaging\\_structures.py',
    'PYMODULE'),
   ('packaging.markers',
    'c:\\program files '
@@ -761,10 +769,6 @@
   ('netbios',
    'C:\\Users\\terro\\AppData\\Roaming\\Python\\Python38\\site-packages\\win32\\lib\\netbios.py',
    'PYMODULE'),
-  ('packaging',
-   'c:\\program files '
-   '(x86)\\python38-32\\lib\\site-packages\\packaging\\__init__.py',
-   'PYMODULE'),
   ('packaging.tags',
    'c:\\program files '
    '(x86)\\python38-32\\lib\\site-packages\\packaging\\tags.py',
@@ -773,29 +777,37 @@
    'c:\\program files '
    '(x86)\\python38-32\\lib\\site-packages\\packaging\\specifiers.py',
    'PYMODULE'),
-  ('packaging.utils',
-   'c:\\program files '
-   '(x86)\\python38-32\\lib\\site-packages\\packaging\\utils.py',
-   'PYMODULE'),
   ('packaging.requirements',
    'c:\\program files '
    '(x86)\\python38-32\\lib\\site-packages\\packaging\\requirements.py',
    'PYMODULE'),
-  ('pkg_resources._vendor.packaging.utils',
+  ('pkg_resources._vendor.packaging._structures',
    'c:\\program files '
-   '(x86)\\python38-32\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\utils.py',
+   '(x86)\\python38-32\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\_structures.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging._typing',
+   'c:\\program files '
+   '(x86)\\python38-32\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\_typing.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging.markers',
+   'c:\\program files '
+   '(x86)\\python38-32\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\markers.py',
    'PYMODULE'),
   ('pkg_resources._vendor.packaging.requirements',
    'c:\\program files '
    '(x86)\\python38-32\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\requirements.py',
    'PYMODULE'),
-  ('pkg_resources._vendor',
+  ('pkg_resources._vendor.packaging.utils',
    'c:\\program files '
-   '(x86)\\python38-32\\lib\\site-packages\\pkg_resources\\_vendor\\__init__.py',
+   '(x86)\\python38-32\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\utils.py',
    'PYMODULE'),
-  ('pkg_resources._vendor.packaging.specifiers',
+  ('pkg_resources._vendor.packaging',
    'c:\\program files '
-   '(x86)\\python38-32\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\specifiers.py',
+   '(x86)\\python38-32\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\__init__.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging.version',
+   'c:\\program files '
+   '(x86)\\python38-32\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\version.py',
    'PYMODULE'),
   ('pkg_resources._vendor.pyparsing',
    'c:\\program files '
@@ -805,25 +817,21 @@
    'c:\\program files '
    '(x86)\\python38-32\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\tags.py',
    'PYMODULE'),
-  ('pkg_resources._vendor.packaging._typing',
+  ('pkg_resources._vendor',
    'c:\\program files '
-   '(x86)\\python38-32\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\_typing.py',
+   '(x86)\\python38-32\\lib\\site-packages\\pkg_resources\\_vendor\\__init__.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging.__about__',
+   'c:\\program files '
+   '(x86)\\python38-32\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\__about__.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging.specifiers',
+   'c:\\program files '
+   '(x86)\\python38-32\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\specifiers.py',
    'PYMODULE'),
   ('pkg_resources._vendor.packaging._compat',
    'c:\\program files '
    '(x86)\\python38-32\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\_compat.py',
-   'PYMODULE'),
-  ('pkg_resources._vendor.packaging.version',
-   'c:\\program files '
-   '(x86)\\python38-32\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\version.py',
-   'PYMODULE'),
-  ('pkg_resources._vendor.packaging',
-   'c:\\program files '
-   '(x86)\\python38-32\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\__init__.py',
-   'PYMODULE'),
-  ('pkg_resources._vendor.packaging.markers',
-   'c:\\program files '
-   '(x86)\\python38-32\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\markers.py',
    'PYMODULE'),
   ('pkg_resources._vendor.appdirs',
    'c:\\program files '
@@ -835,23 +843,15 @@
   ('win32com.shell',
    'C:\\Users\\terro\\AppData\\Roaming\\Python\\Python38\\site-packages\\win32comext\\shell\\__init__.py',
    'PYMODULE'),
-  ('pkg_resources._vendor.packaging.__about__',
-   'c:\\program files '
-   '(x86)\\python38-32\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\__about__.py',
-   'PYMODULE'),
-  ('pkg_resources._vendor.packaging._structures',
-   'c:\\program files '
-   '(x86)\\python38-32\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\_structures.py',
-   'PYMODULE'),
   ('pkg_resources.extern',
    'c:\\program files '
    '(x86)\\python38-32\\lib\\site-packages\\pkg_resources\\extern\\__init__.py',
    'PYMODULE'),
-  ('tracemalloc',
-   'c:\\program files (x86)\\python38-32\\lib\\tracemalloc.py',
-   'PYMODULE'),
   ('_py_abc',
    'c:\\program files (x86)\\python38-32\\lib\\_py_abc.py',
+   'PYMODULE'),
+  ('tracemalloc',
+   'c:\\program files (x86)\\python38-32\\lib\\tracemalloc.py',
    'PYMODULE'),
   ('stringprep',
    'c:\\program files (x86)\\python38-32\\lib\\stringprep.py',
@@ -913,88 +913,101 @@
   ('PIL.Image',
    'c:\\program files (x86)\\python38-32\\lib\\site-packages\\PIL\\Image.py',
    'PYMODULE'),
-  ('PIL.EpsImagePlugin',
+  ('PIL.Hdf5StubImagePlugin',
    'c:\\program files '
-   '(x86)\\python38-32\\lib\\site-packages\\PIL\\EpsImagePlugin.py',
+   '(x86)\\python38-32\\lib\\site-packages\\PIL\\Hdf5StubImagePlugin.py',
    'PYMODULE'),
   ('PIL.ImageFile',
    'c:\\program files '
    '(x86)\\python38-32\\lib\\site-packages\\PIL\\ImageFile.py',
    'PYMODULE'),
+  ('PIL.MicImagePlugin',
+   'c:\\program files '
+   '(x86)\\python38-32\\lib\\site-packages\\PIL\\MicImagePlugin.py',
+   'PYMODULE'),
   ('PIL.FtexImagePlugin',
    'c:\\program files '
    '(x86)\\python38-32\\lib\\site-packages\\PIL\\FtexImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.PcxImagePlugin',
-   'c:\\program files '
-   '(x86)\\python38-32\\lib\\site-packages\\PIL\\PcxImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.SpiderImagePlugin',
-   'c:\\program files '
-   '(x86)\\python38-32\\lib\\site-packages\\PIL\\SpiderImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.ImageTk',
-   'c:\\program files (x86)\\python38-32\\lib\\site-packages\\PIL\\ImageTk.py',
-   'PYMODULE'),
-  ('PIL.WebPImagePlugin',
-   'c:\\program files '
-   '(x86)\\python38-32\\lib\\site-packages\\PIL\\WebPImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.CurImagePlugin',
-   'c:\\program files '
-   '(x86)\\python38-32\\lib\\site-packages\\PIL\\CurImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.XVThumbImagePlugin',
-   'c:\\program files '
-   '(x86)\\python38-32\\lib\\site-packages\\PIL\\XVThumbImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.XpmImagePlugin',
-   'c:\\program files '
-   '(x86)\\python38-32\\lib\\site-packages\\PIL\\XpmImagePlugin.py',
    'PYMODULE'),
   ('PIL.MpegImagePlugin',
    'c:\\program files '
    '(x86)\\python38-32\\lib\\site-packages\\PIL\\MpegImagePlugin.py',
    'PYMODULE'),
-  ('PIL.GribStubImagePlugin',
+  ('PIL.EpsImagePlugin',
    'c:\\program files '
-   '(x86)\\python38-32\\lib\\site-packages\\PIL\\GribStubImagePlugin.py',
+   '(x86)\\python38-32\\lib\\site-packages\\PIL\\EpsImagePlugin.py',
    'PYMODULE'),
-  ('PIL.MspImagePlugin',
+  ('PIL.PsdImagePlugin',
    'c:\\program files '
-   '(x86)\\python38-32\\lib\\site-packages\\PIL\\MspImagePlugin.py',
+   '(x86)\\python38-32\\lib\\site-packages\\PIL\\PsdImagePlugin.py',
    'PYMODULE'),
-  ('PIL.IptcImagePlugin',
+  ('PIL.SgiImagePlugin',
    'c:\\program files '
-   '(x86)\\python38-32\\lib\\site-packages\\PIL\\IptcImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.ImtImagePlugin',
-   'c:\\program files '
-   '(x86)\\python38-32\\lib\\site-packages\\PIL\\ImtImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.MpoImagePlugin',
-   'c:\\program files '
-   '(x86)\\python38-32\\lib\\site-packages\\PIL\\MpoImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.BufrStubImagePlugin',
-   'c:\\program files '
-   '(x86)\\python38-32\\lib\\site-packages\\PIL\\BufrStubImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.SunImagePlugin',
-   'c:\\program files '
-   '(x86)\\python38-32\\lib\\site-packages\\PIL\\SunImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.MicImagePlugin',
-   'c:\\program files '
-   '(x86)\\python38-32\\lib\\site-packages\\PIL\\MicImagePlugin.py',
+   '(x86)\\python38-32\\lib\\site-packages\\PIL\\SgiImagePlugin.py',
    'PYMODULE'),
   ('PIL.Jpeg2KImagePlugin',
    'c:\\program files '
    '(x86)\\python38-32\\lib\\site-packages\\PIL\\Jpeg2KImagePlugin.py',
    'PYMODULE'),
-  ('PIL.GbrImagePlugin',
+  ('PIL.WmfImagePlugin',
    'c:\\program files '
-   '(x86)\\python38-32\\lib\\site-packages\\PIL\\GbrImagePlugin.py',
+   '(x86)\\python38-32\\lib\\site-packages\\PIL\\WmfImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PixarImagePlugin',
+   'c:\\program files '
+   '(x86)\\python38-32\\lib\\site-packages\\PIL\\PixarImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PcdImagePlugin',
+   'c:\\program files '
+   '(x86)\\python38-32\\lib\\site-packages\\PIL\\PcdImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.IptcImagePlugin',
+   'c:\\program files '
+   '(x86)\\python38-32\\lib\\site-packages\\PIL\\IptcImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.DcxImagePlugin',
+   'c:\\program files '
+   '(x86)\\python38-32\\lib\\site-packages\\PIL\\DcxImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.XbmImagePlugin',
+   'c:\\program files '
+   '(x86)\\python38-32\\lib\\site-packages\\PIL\\XbmImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.McIdasImagePlugin',
+   'c:\\program files '
+   '(x86)\\python38-32\\lib\\site-packages\\PIL\\McIdasImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.MspImagePlugin',
+   'c:\\program files '
+   '(x86)\\python38-32\\lib\\site-packages\\PIL\\MspImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.FpxImagePlugin',
+   'c:\\program files '
+   '(x86)\\python38-32\\lib\\site-packages\\PIL\\FpxImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.BufrStubImagePlugin',
+   'c:\\program files '
+   '(x86)\\python38-32\\lib\\site-packages\\PIL\\BufrStubImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.IcoImagePlugin',
+   'c:\\program files '
+   '(x86)\\python38-32\\lib\\site-packages\\PIL\\IcoImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.MpoImagePlugin',
+   'c:\\program files '
+   '(x86)\\python38-32\\lib\\site-packages\\PIL\\MpoImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.BlpImagePlugin',
+   'c:\\program files '
+   '(x86)\\python38-32\\lib\\site-packages\\PIL\\BlpImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.XVThumbImagePlugin',
+   'c:\\program files '
+   '(x86)\\python38-32\\lib\\site-packages\\PIL\\XVThumbImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.CurImagePlugin',
+   'c:\\program files '
+   '(x86)\\python38-32\\lib\\site-packages\\PIL\\CurImagePlugin.py',
    'PYMODULE'),
   ('PIL.IcnsImagePlugin',
    'c:\\program files '
@@ -1002,18 +1015,6 @@
    'PYMODULE'),
   ('PIL.features',
    'c:\\program files (x86)\\python38-32\\lib\\site-packages\\PIL\\features.py',
-   'PYMODULE'),
-  ('PIL.WmfImagePlugin',
-   'c:\\program files '
-   '(x86)\\python38-32\\lib\\site-packages\\PIL\\WmfImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.FliImagePlugin',
-   'c:\\program files '
-   '(x86)\\python38-32\\lib\\site-packages\\PIL\\FliImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.SgiImagePlugin',
-   'c:\\program files '
-   '(x86)\\python38-32\\lib\\site-packages\\PIL\\SgiImagePlugin.py',
    'PYMODULE'),
   ('PIL.PdfImagePlugin',
    'c:\\program files '
@@ -1027,61 +1028,60 @@
    'c:\\program files '
    '(x86)\\python38-32\\lib\\site-packages\\PIL\\ImageSequence.py',
    'PYMODULE'),
-  ('PIL.PcdImagePlugin',
+  ('PIL.GbrImagePlugin',
    'c:\\program files '
-   '(x86)\\python38-32\\lib\\site-packages\\PIL\\PcdImagePlugin.py',
+   '(x86)\\python38-32\\lib\\site-packages\\PIL\\GbrImagePlugin.py',
    'PYMODULE'),
-  ('PIL.ImImagePlugin',
+  ('PIL.WebPImagePlugin',
    'c:\\program files '
-   '(x86)\\python38-32\\lib\\site-packages\\PIL\\ImImagePlugin.py',
+   '(x86)\\python38-32\\lib\\site-packages\\PIL\\WebPImagePlugin.py',
    'PYMODULE'),
-  ('PIL.DcxImagePlugin',
+  ('PIL.SpiderImagePlugin',
    'c:\\program files '
-   '(x86)\\python38-32\\lib\\site-packages\\PIL\\DcxImagePlugin.py',
+   '(x86)\\python38-32\\lib\\site-packages\\PIL\\SpiderImagePlugin.py',
    'PYMODULE'),
-  ('PIL.Hdf5StubImagePlugin',
-   'c:\\program files '
-   '(x86)\\python38-32\\lib\\site-packages\\PIL\\Hdf5StubImagePlugin.py',
+  ('PIL.ImageTk',
+   'c:\\program files (x86)\\python38-32\\lib\\site-packages\\PIL\\ImageTk.py',
    'PYMODULE'),
-  ('PIL.McIdasImagePlugin',
+  ('PIL.SunImagePlugin',
    'c:\\program files '
-   '(x86)\\python38-32\\lib\\site-packages\\PIL\\McIdasImagePlugin.py',
+   '(x86)\\python38-32\\lib\\site-packages\\PIL\\SunImagePlugin.py',
    'PYMODULE'),
-  ('PIL.IcoImagePlugin',
+  ('PIL.GribStubImagePlugin',
    'c:\\program files '
-   '(x86)\\python38-32\\lib\\site-packages\\PIL\\IcoImagePlugin.py',
+   '(x86)\\python38-32\\lib\\site-packages\\PIL\\GribStubImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.XpmImagePlugin',
+   'c:\\program files '
+   '(x86)\\python38-32\\lib\\site-packages\\PIL\\XpmImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PcxImagePlugin',
+   'c:\\program files '
+   '(x86)\\python38-32\\lib\\site-packages\\PIL\\PcxImagePlugin.py',
    'PYMODULE'),
   ('PIL.PalmImagePlugin',
    'c:\\program files '
    '(x86)\\python38-32\\lib\\site-packages\\PIL\\PalmImagePlugin.py',
    'PYMODULE'),
+  ('PIL.ImImagePlugin',
+   'c:\\program files '
+   '(x86)\\python38-32\\lib\\site-packages\\PIL\\ImImagePlugin.py',
+   'PYMODULE'),
   ('PIL.FitsStubImagePlugin',
    'c:\\program files '
    '(x86)\\python38-32\\lib\\site-packages\\PIL\\FitsStubImagePlugin.py',
    'PYMODULE'),
-  ('PIL.PixarImagePlugin',
+  ('PIL.FliImagePlugin',
    'c:\\program files '
-   '(x86)\\python38-32\\lib\\site-packages\\PIL\\PixarImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.XbmImagePlugin',
-   'c:\\program files '
-   '(x86)\\python38-32\\lib\\site-packages\\PIL\\XbmImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.BlpImagePlugin',
-   'c:\\program files '
-   '(x86)\\python38-32\\lib\\site-packages\\PIL\\BlpImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.FpxImagePlugin',
-   'c:\\program files '
-   '(x86)\\python38-32\\lib\\site-packages\\PIL\\FpxImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.PsdImagePlugin',
-   'c:\\program files '
-   '(x86)\\python38-32\\lib\\site-packages\\PIL\\PsdImagePlugin.py',
+   '(x86)\\python38-32\\lib\\site-packages\\PIL\\FliImagePlugin.py',
    'PYMODULE'),
   ('PIL.TgaImagePlugin',
    'c:\\program files '
    '(x86)\\python38-32\\lib\\site-packages\\PIL\\TgaImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.ImtImagePlugin',
+   'c:\\program files '
+   '(x86)\\python38-32\\lib\\site-packages\\PIL\\ImtImagePlugin.py',
    'PYMODULE'),
   ('PIL.DdsImagePlugin',
    'c:\\program files '
@@ -1250,6 +1250,54 @@
    'c:\\program files '
    '(x86)\\python38-32\\lib\\site-packages\\setuptools\\__init__.py',
    'PYMODULE'),
+  ('setuptools._vendor.ordered_set',
+   'c:\\program files '
+   '(x86)\\python38-32\\lib\\site-packages\\setuptools\\_vendor\\ordered_set.py',
+   'PYMODULE'),
+  ('setuptools._vendor.packaging.__about__',
+   'c:\\program files '
+   '(x86)\\python38-32\\lib\\site-packages\\setuptools\\_vendor\\packaging\\__about__.py',
+   'PYMODULE'),
+  ('setuptools._vendor.packaging._structures',
+   'c:\\program files '
+   '(x86)\\python38-32\\lib\\site-packages\\setuptools\\_vendor\\packaging\\_structures.py',
+   'PYMODULE'),
+  ('setuptools._vendor.packaging',
+   'c:\\program files '
+   '(x86)\\python38-32\\lib\\site-packages\\setuptools\\_vendor\\packaging\\__init__.py',
+   'PYMODULE'),
+  ('setuptools._vendor.packaging.markers',
+   'c:\\program files '
+   '(x86)\\python38-32\\lib\\site-packages\\setuptools\\_vendor\\packaging\\markers.py',
+   'PYMODULE'),
+  ('setuptools._vendor.pyparsing',
+   'c:\\program files '
+   '(x86)\\python38-32\\lib\\site-packages\\setuptools\\_vendor\\pyparsing.py',
+   'PYMODULE'),
+  ('setuptools._vendor.packaging.version',
+   'c:\\program files '
+   '(x86)\\python38-32\\lib\\site-packages\\setuptools\\_vendor\\packaging\\version.py',
+   'PYMODULE'),
+  ('setuptools._vendor.packaging.utils',
+   'c:\\program files '
+   '(x86)\\python38-32\\lib\\site-packages\\setuptools\\_vendor\\packaging\\utils.py',
+   'PYMODULE'),
+  ('setuptools._vendor',
+   'c:\\program files '
+   '(x86)\\python38-32\\lib\\site-packages\\setuptools\\_vendor\\__init__.py',
+   'PYMODULE'),
+  ('setuptools._vendor.packaging._compat',
+   'c:\\program files '
+   '(x86)\\python38-32\\lib\\site-packages\\setuptools\\_vendor\\packaging\\_compat.py',
+   'PYMODULE'),
+  ('setuptools._vendor.packaging._typing',
+   'c:\\program files '
+   '(x86)\\python38-32\\lib\\site-packages\\setuptools\\_vendor\\packaging\\_typing.py',
+   'PYMODULE'),
+  ('setuptools._vendor.packaging.specifiers',
+   'c:\\program files '
+   '(x86)\\python38-32\\lib\\site-packages\\setuptools\\_vendor\\packaging\\specifiers.py',
+   'PYMODULE'),
   ('setuptools._vendor.packaging.requirements',
    'c:\\program files '
    '(x86)\\python38-32\\lib\\site-packages\\setuptools\\_vendor\\packaging\\requirements.py',
@@ -1257,54 +1305,6 @@
   ('setuptools._vendor.packaging.tags',
    'c:\\program files '
    '(x86)\\python38-32\\lib\\site-packages\\setuptools\\_vendor\\packaging\\tags.py',
-   'PYMODULE'),
-  ('setuptools._vendor.packaging.utils',
-   'c:\\program files '
-   '(x86)\\python38-32\\lib\\site-packages\\setuptools\\_vendor\\packaging\\utils.py',
-   'PYMODULE'),
-  ('setuptools._vendor.packaging.markers',
-   'c:\\program files '
-   '(x86)\\python38-32\\lib\\site-packages\\setuptools\\_vendor\\packaging\\markers.py',
-   'PYMODULE'),
-  ('setuptools._vendor.packaging',
-   'c:\\program files '
-   '(x86)\\python38-32\\lib\\site-packages\\setuptools\\_vendor\\packaging\\__init__.py',
-   'PYMODULE'),
-  ('setuptools._vendor.packaging._compat',
-   'c:\\program files '
-   '(x86)\\python38-32\\lib\\site-packages\\setuptools\\_vendor\\packaging\\_compat.py',
-   'PYMODULE'),
-  ('setuptools._vendor.packaging._structures',
-   'c:\\program files '
-   '(x86)\\python38-32\\lib\\site-packages\\setuptools\\_vendor\\packaging\\_structures.py',
-   'PYMODULE'),
-  ('setuptools._vendor.packaging._typing',
-   'c:\\program files '
-   '(x86)\\python38-32\\lib\\site-packages\\setuptools\\_vendor\\packaging\\_typing.py',
-   'PYMODULE'),
-  ('setuptools._vendor',
-   'c:\\program files '
-   '(x86)\\python38-32\\lib\\site-packages\\setuptools\\_vendor\\__init__.py',
-   'PYMODULE'),
-  ('setuptools._vendor.packaging.specifiers',
-   'c:\\program files '
-   '(x86)\\python38-32\\lib\\site-packages\\setuptools\\_vendor\\packaging\\specifiers.py',
-   'PYMODULE'),
-  ('setuptools._vendor.packaging.__about__',
-   'c:\\program files '
-   '(x86)\\python38-32\\lib\\site-packages\\setuptools\\_vendor\\packaging\\__about__.py',
-   'PYMODULE'),
-  ('setuptools._vendor.packaging.version',
-   'c:\\program files '
-   '(x86)\\python38-32\\lib\\site-packages\\setuptools\\_vendor\\packaging\\version.py',
-   'PYMODULE'),
-  ('setuptools._vendor.pyparsing',
-   'c:\\program files '
-   '(x86)\\python38-32\\lib\\site-packages\\setuptools\\_vendor\\pyparsing.py',
-   'PYMODULE'),
-  ('setuptools._vendor.ordered_set',
-   'c:\\program files '
-   '(x86)\\python38-32\\lib\\site-packages\\setuptools\\_vendor\\ordered_set.py',
    'PYMODULE'),
   ('setuptools.msvc',
    'c:\\program files '

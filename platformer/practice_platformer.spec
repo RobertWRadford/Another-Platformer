@@ -4,7 +4,7 @@ block_cipher = None
 
 
 a = Analysis(['practice_platformer.py'],
-             pathex=['C:\\Users\\terro\\Documents\\GitHub\\Arcade-Practice\\arcade_practice\\platformer'],
+             pathex=['C:\\Users\\terro\\Documents\\GitHub\\Robert\\Another-Platformer\\platformer'],
              binaries=[],
              datas=[('maps', 'maps')],
              hiddenimports=[],
