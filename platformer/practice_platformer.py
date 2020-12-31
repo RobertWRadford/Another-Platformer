@@ -21,8 +21,8 @@ else:
     SCREEN_HEIGHT = 1080
 SCREEN_TITLE = "Platformer"
 
-# SCREEN_WIDTH = 1000
-# SCREEN_HEIGHT = 650
+# SCREEN_WIDTH = 500
+# SCREEN_HEIGHT = 325
 
 WIDTH_SCALING = (SCREEN_WIDTH/1000)
 
@@ -548,7 +548,7 @@ def main():
     """ Main method """
     #Views
     window = arcade.Window(SCREEN_WIDTH, SCREEN_HEIGHT, SCREEN_TITLE)
-    start_view = InstructionView(1)
+    start_view = InstructionView(1, 0)
     window.show_view(start_view)
     arcade.run()
 
