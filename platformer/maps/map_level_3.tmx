@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.4" tiledversion="1.4.3" orientation="orthogonal" renderorder="left-up" width="30" height="30" tilewidth="128" tileheight="128" infinite="0" backgroundcolor="#0073ae" nextlayerid="6" nextobjectid="14">
+ <tileset firstgid="1" source="my_tiles.tsx"/>
+ <layer id="1" name="Platforms" width="30" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztl+EKgCAMhPdSZr7/i5WQNMalU5dSeHB/JPqYdnNtRLRN8mh9nbufdpcDW3fgmRJXviPH9MJIfL1Ury+wEdPTXTt3DTfHTswWac8X1dDKrOFaa3F1SlnU5MySG5Uy08Lu3WeZ1x4uz8mTaxha7ghZc1F/RHvzl3oXdww39y29ydVqcfvEZ8ZR3Jp5y3J+RjMs6pmBcbV9VQrdXVLoPpv1PxZ9AIq7LRE=
+  </data>
+ </layer>
+ <layer id="5" name="Coins" width="30" height="30">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFtAImVFIzCkbBKKANGIz5j9puooZ5o2UZ6WA0PEYBtcFomhoFhMBQTSO0dPdQDRN6AwDYUAJx
+  </data>
+ </layer>
+ <objectgroup id="2" name="Moving Platforms">
+  <object id="11" gid="58" x="1024" y="3457.33" width="384" height="128">
+   <properties>
+    <property name="boundary_left" type="float" value="896"/>
+    <property name="boundary_right" type="float" value="1920"/>
+    <property name="change_x" type="float" value="2"/>
+   </properties>
+  </object>
+  <object id="13" gid="58" x="897.333" y="1765" width="384" height="128">
+   <properties>
+    <property name="boundary_left" type="float" value="769.98"/>
+    <property name="boundary_right" type="float" value="1600"/>
+    <property name="change_x" type="float" value="2"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="4" name="Hazards" width="30" height="30">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo4A0oI8Fj4JRMAqGP8CW90fLgFEwCkbBKBgFIwngqwtx1YeDvc4EAI5SBGk=
+  </data>
+ </layer>
+ <layer id="3" name="Ladders" width="30" height="30">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFAwGMBshew1F7R+0dtXfA7SU3/wP1HaBEDT5307JMwmcvLeNwpNhLTNzRwl5izKSRfw8MhL3EgFF7R+0dtXfo2juSAQCiMgjK
+  </data>
+ </layer>
+</map>
