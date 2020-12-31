@@ -7,5 +7,5 @@ Download the .rar file and then decompress it. Then, you can go into the dist fo
 The A and D keys move your character left and right, SPACE key jumps, W and S move you up and down on a ladder, R resets the current stage without resetting the timer, and L completely resets the game to level 1 with 0 seconds on the timer. I hope you have fun with it!
 
 
-IMPORTANT NOTE!
-I've had trouble with pyinstaller being detected as virus software when using --onefile to package everything into a single .exe file for user simplicity, so I've had to create build folders/files. It's less convenient but I've compressed them so you can download it as one .rar. Sorry for the inconvenience!
+DEV NOTE:
+  I've had trouble with pyinstaller being detected as virus software when using --onefile to package everything into a single .exe file for user simplicity, so I've had to create build folders/files. It's less convenient but I've compressed them so you can download it as one .rar. Sorry for the inconvenience!
