@@ -3,17 +3,17 @@
  <tileset firstgid="1" source="my_tiles.tsx"/>
  <layer id="1" name="Platforms" width="70" height="50">
   <data encoding="base64" compression="zlib">
-   eJzt2tuOAiEMBuB5KUd9/xfTiSFi0yMU5NA/IXszsuPnsLawxxGJRGpzbj44l10TLnjCBU+44AkXPOGCJ1zwrOTyeI9bNmqyistlcnecbwWXZBIu3+Qm4fIJNAkX3GR3F8pkZxfOZFcXyWRUF1hXedVYaW7JZEQX77oKm9vDJX12T+E6qwv87NPzMIKJ5h6011pdrvk81oUmVpPe6wg+dz1sSkx6u6TfidlI65QK9fe59brUxuIC7xXzWiW130er2nh8T69o41W/rGbjWe+uZOPdH0k2sFcY1bBF30jZUDXJiDat+mmq5qHGaDYt9xlgzSPVqiPZ9Nx/0dTxsO79l9VoLh7PEdZXWOeYwaVmjZXOMYsLtsYs+4FWm5n2d2sDfTmjnVxgsGcwZWcXLuHym9SnzOzifX95nzKri/S/x9bA3q2ni8d82Nmdx5ywJujhcoKf1uQW3vv/VI9f66J5PeWiOfuzntNban9u7hKX/H1i65zyyK+D94S9h9Jzek3tL83NuUhnPDVDU+fX9g1c/yC9hnN5AY9lgqM=
+   eJzt2gtuwyAMBmAO1q2+/6nWakKllo1tMIiHfwlNlVJCv4XVTpZSJBLpzePyUXO5NeFCJ1zohAudcKETLnTChc5JLr+vAcXoySkub5Mfx/lOcMkm4fJJaRIu/8Em4UKb3O7CmdzsUjO51UUyWdUF11Xl6I3GZEUX77qKmtvDJf/unsJxVhcgXoNyTS2xmGjWoD3W6vKeDxTn94jVZPY+gvR93c2waTGZ7ZLPSdlI+5QLCGPUvtTG4oLXSnmdkt7vo1NtPL6nT7Txql9Os/Gsd0+y8e6PJBvcK6xqOKJv5Gy4mmRFm1H9NFfzcGM1m5H3GXDNI9WqK9nMvP+iqeMhrfH3ZzUXj+sIiGGdYweXnj3WOscuLtQeK4f23Fqbne7v9gb71oxucsGhrsGcm11qCZfv5D5lZxfv9ZV9yq4u0v8eW4N7t5kuHvNRz+485sQ1wQyXB/ppTWnhff+f6/F7XTTv51w0z/6sz+kh6Wv/2twtLuXnpPY551Eeh9dEfYbW5/Sa2l+au+YCA4emzu/tG2r9g/SemssfMPuS0g==
   </data>
  </layer>
  <layer id="5" name="Hazards" width="70" height="50">
   <data encoding="base64" compression="zlib">
-   eJztzrEJAAAIAzA/8v/v3AVHdUmgdGwjAAAAAAAAAAAAAAAA9uX3AeBcDr2x08OPAsBZAag=
+   eJztzrEJAAAIAzC/8/+P3AVHdUmgdGwjAAAAAAAAAAAAAAAA9uX3AeBcDr2x08OPAo7XAoA=
   </data>
  </layer>
  <layer id="2" name="Coins" width="70" height="50">
   <data encoding="base64" compression="zlib">
-   eJzt1rENACAIBECGcv/ZbC2sgcDdBMT/mI8AAAA6OtUHAABAkawtbHPz0oc83hoA6MpOAZjDn04l/WMjvZ9NvnSlm7388pDRbhcCgQKl
+   eJzt1rENACAIBED2cv+9bC2sgcDdBMT/mI8AAAA6OtUHAABAkawtbHPz0oc83hoA6MpOAZjDn04l/WMjvZ9NvnSlm7388pDRbhdPJwMA
   </data>
  </layer>
 </map>

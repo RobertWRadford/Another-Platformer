@@ -3,17 +3,17 @@
  <tileset firstgid="1" source="my_tiles.tsx"/>
  <layer id="1" name="Platforms" width="15" height="15">
   <data encoding="base64" compression="zlib">
-   eJwzY2BgMKMAkwMGWq8ZmhgxbFLtxaafHECuXnLjyAyJJlavGRaakF5segjpxacHl15i9KDrJYemBAMAf3ERuQ==
+   eJyzYWBgsKEAkwMGWq8NmhgxbFLtxaafHECuXnLjyAaJJlavDRaakF5segjpxacHl15i9KDrJYemBAMAjTYTsQ==
   </data>
  </layer>
  <layer id="2" name="Coins" width="15" height="15">
   <data encoding="base64" compression="zlib">
-   eJxjYBiawIQC9lAB5LqZHH2jegYOAACVwAJx
+   eJxjYBiawJoC9lAB5LqZHH3DTc9QAgALqwKK
   </data>
  </layer>
  <layer id="3" name="Hazards" width="15" height="15">
   <data encoding="base64" compression="zlib">
-   eJxjYKAM6JCBR8EoGOxAn0SaEgAAey0DVw==
+   eJxjYKAMuJCBR8EoGOzAnUSaEgAAiokFHw==
   </data>
  </layer>
 </map>
