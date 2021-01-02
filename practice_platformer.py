@@ -8,10 +8,8 @@ import timeit
 
 # Constants
 
-# SCREEN_WIDTH = arcade.get_screens()[0].width
-# SCREEN_HEIGHT = arcade.get_screens()[0].height-50
-SCREEN_WIDTH = 1280
-SCREEN_HEIGHT = 720
+SCREEN_WIDTH = arcade.get_screens()[0].width
+SCREEN_HEIGHT = arcade.get_screens()[0].height-50
 
 SCREEN_TITLE = "Platformer"
 
@@ -460,7 +458,7 @@ class GameView(arcade.View):
 
         # self.time += delta_time
         self.frames += 1
-        if self.frames % 60 == 0:
+        if self.frames % 45 == 0:
             self.time+=1
 
         # if self.frame_count%60==0:
@@ -602,13 +600,10 @@ class GameView(arcade.View):
 def main():
     """ Main method """
     #Views
-    window = arcade.Window(SCREEN_WIDTH, SCREEN_HEIGHT, SCREEN_TITLE, update_rate=1/60)
+    window = arcade.Window(SCREEN_WIDTH, SCREEN_HEIGHT, SCREEN_TITLE, update_rate=1/45)
     window.center_window()
-    print('made it to window created')
     start_view = InstructionView(1, 0)
-    print('created view')
     window.show_view(start_view)
-    print('showed view')
     arcade.run()
 
 if __name__ == "__main__":
