@@ -604,8 +604,11 @@ def main():
     #Views
     window = arcade.Window(SCREEN_WIDTH, SCREEN_HEIGHT, SCREEN_TITLE, update_rate=1/60)
     window.center_window()
+    print('made it to window created')
     start_view = InstructionView(1, 0)
+    print('created view')
     window.show_view(start_view)
+    print('showed view')
     arcade.run()
 
 if __name__ == "__main__":
