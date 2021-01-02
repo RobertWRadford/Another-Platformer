@@ -4,20 +4,15 @@ Platformer Game
 import math
 from typing import Optional
 import arcade
-import ctypes
+import timeit
 
 # Constants
-SCREEN_WIDTH = 1920
-SCREEN_HEIGHT = 1080
 
-if hasattr(ctypes, 'windll'):
-    user32 = ctypes.windll.user32
-    SCREEN_WIDTH = user32.GetSystemMetrics(0)
-    SCREEN_HEIGHT = user32.GetSystemMetrics(1)
+SCREEN_WIDTH = arcade.get_screens()[0].width
+SCREEN_HEIGHT = arcade.get_screens()[0].height-50
+
 SCREEN_TITLE = "Platformer"
 
-# SCREEN_WIDTH = 500
-# SCREEN_HEIGHT = 325
 
 WIDTH_SCALING = (SCREEN_WIDTH/1000)
 
@@ -35,10 +30,10 @@ GRAVITY = 1*WIDTH_SCALING
 
 # How many pixels to keep as a minimum margin between the character
 # and the edge of the screen.
-LEFT_VIEWPORT_MARGIN = int(SCREEN_WIDTH/4)
-RIGHT_VIEWPORT_MARGIN = int(SCREEN_WIDTH/4)
-BOTTOM_VIEWPORT_MARGIN = int(TILE_WIDTH)
-TOP_VIEWPORT_MARGIN = int(2*TILE_WIDTH)
+LEFT_VIEWPORT_MARGIN = int(SCREEN_WIDTH/3.5)
+RIGHT_VIEWPORT_MARGIN = int(SCREEN_WIDTH/3.5)
+BOTTOM_VIEWPORT_MARGIN = int(SCREEN_HEIGHT/5.5)
+TOP_VIEWPORT_MARGIN = int(SCREEN_HEIGHT/2.5)
 
 # Constants used to track if the player is facing left or right
 RIGHT_FACING = 0
@@ -153,8 +148,8 @@ class InstructionView(arcade.View):
         seconds = 0
         if self.level == 7:
             hours = int((self.time/60)/60)
-            minutes = (self.time//60)%60
-            seconds = self.time%60
+            minutes = int((self.time//60)%60)
+            seconds = int(self.time%60)
 
         level_header_text = {
             1: 'Collect All Coins To Move On',
@@ -166,17 +161,37 @@ class InstructionView(arcade.View):
             7: 'Congratulations!'
         }
         level_descript_text = {
-            1: 'A and D to move left and right, SPACE to jump. R to reset level but keeps time, L to full reset.',
+            1: 'A and D to move left and right, SPACE to jump. R to reset level but keeps time, L to full reset. F to toggle fullscreen.',
             2: 'You have one jump at a time but can jump mid air.',
             3: 'W and S to move up and down a ladder',
             4: 'You\'ve unlocked double jumping!, you now have two jumps per reset.',
             5: 'One cycle is best cycle. If you aren\'t holding a key ladders stop your speed.',
             6: 'Careful ^.^',
-            7: f'You beat the game in {hours}:{str(minutes).zfill(2)}:{str(seconds).zfill(2)}.'
+            7: f'You beat the game in {hours}:{minutes:02d}:{seconds:02d}.'
         }
-        arcade.draw_text(f"Level {self.level}: {level_header_text[self.level]}", SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2, arcade.color.WHITE, font_size=50, anchor_x="center")
-        arcade.draw_text(f"{level_descript_text[self.level]}", SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2-75, arcade.color.WHITE, font_size=20, anchor_x="center")
-        arcade.draw_text("Click to advance", SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2-150, arcade.color.WHITE, font_size=20, anchor_x= "center")
+        arcade.draw_text(f"Level {self.level}: {level_header_text[self.level]}", SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2, arcade.color.WHITE, font_size=35*WIDTH_SCALING, anchor_x='center')
+        arcade.draw_text(f"{level_descript_text[self.level]}", SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2-(75*WIDTH_SCALING), arcade.color.WHITE, font_size=10*WIDTH_SCALING, anchor_x='center')
+        arcade.draw_text("Click or press R to advance", SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2-(150*WIDTH_SCALING), arcade.color.WHITE, font_size=10*WIDTH_SCALING, anchor_x='center')
+
+    def on_key_press(self, key, modifiers):
+
+        if key == arcade.key.R:
+            if self.level == 7:
+                game_view = InstructionView(1, 0)
+                self.window.show_view(game_view)
+            game_view = GameView(self.level, self.time)
+            game_view.setup(self.level)
+            self.window.show_view(game_view)
+        elif key == arcade.key.F:
+            if self.window.fullscreen:
+                self.window.set_fullscreen(fullscreen=False)
+            else:
+                self.window.set_fullscreen(fullscreen=True)
+        elif key == arcade.key.L:
+            start_view = InstructionView(1,0)
+            self.window.show_view(start_view)
+        elif key == arcade.key.ESCAPE:
+            self.window.close()
 
     def on_mouse_press(self, _x, _y, _button, _modifiers):
         """ If the user presses the mouse button, start the game. """
@@ -224,9 +239,15 @@ class GameView(arcade.View):
 
         # Keep track of the score
         self.score = 0
-        # time spent
+        # timer variable
         self.frames = 0
         self.time = time
+
+        #frame calculation
+        self.frame_count = 0
+        self.fps_start_timer = None
+        self.fps = 60
+        # self.current_update_rate = 60
 
         # Where is the right edge of the map?
         self.end_of_map = 0
@@ -299,8 +320,10 @@ class GameView(arcade.View):
         # -- Moving Platforms
         self.moving_platforms_list = arcade.tilemap.process_layer(my_map, moving_platforms_layer_name, TILE_SCALING)
         for sprite in self.moving_platforms_list:
+            
             sprite.change_x *= WIDTH_SCALING
             sprite.change_y *= WIDTH_SCALING
+
             if sprite.boundary_right:
                 sprite.boundary_right *= TILE_SCALING
             if sprite.boundary_left:
@@ -311,7 +334,6 @@ class GameView(arcade.View):
                 sprite.boundary_bottom *= TILE_SCALING
             self.wall_list.append(sprite)
         
-
         # -- Coins
         self.coin_list = arcade.tilemap.process_layer(my_map, coins_layer_name, TILE_SCALING, use_spatial_hash=True)
 
@@ -356,12 +378,16 @@ class GameView(arcade.View):
                          arcade.csscolor.WHITE, 18*WIDTH_SCALING)
 
         hours = int((self.time/60)/60)
-        minutes = (self.time//60)%60
-        seconds = self.time%60
+        minutes = int((self.time//60)%60)
+        seconds = int(self.time%60)
 
-        frames_text = f"time: {hours}:{str(minutes).zfill(2)}:{str(seconds).zfill(2)}"
+        frames_text = f"Time: {hours}:{minutes:02d}:{seconds:02d}"
         arcade.draw_text(frames_text, 10*WIDTH_SCALING + self.view_left, 30*(WIDTH_SCALING) + self.view_bottom,
                          arcade.csscolor.WHITE, 18*WIDTH_SCALING)
+
+        # Display timings
+        # output = f"FPS: {self.fps:.2f}"
+        # arcade.draw_text(output, 15*WIDTH_SCALING + self.view_left, SCREEN_HEIGHT - (30*WIDTH_SCALING)+self.view_bottom, arcade.color.WHITE, 18*WIDTH_SCALING)
 
     def on_key_press(self, key, modifiers):
         """Called whenever a key is pressed. """
@@ -385,12 +411,19 @@ class GameView(arcade.View):
         elif key == arcade.key.L:
             start_view = InstructionView(1,0)
             self.window.show_view(start_view)
+        elif key == arcade.key.F:
+            if self.window.fullscreen:
+                self.window.set_fullscreen(fullscreen=False)
+            else:
+                self.window.set_fullscreen(fullscreen=True)
         elif key == arcade.key.SPACE:
             if self.jump_remaining:
                 self.jump_remaining -= 1
                 self.player_sprite.change_y = PLAYER_JUMP_SPEED
                 arcade.play_sound(self.jump_sound, volume=.6)
                 self.keys_pressed.add('SP')
+        elif key == arcade.key.ESCAPE:
+            self.window.close()
 
     def on_key_release(self, key, modifiers):
         """Called when the user releases a key. """
@@ -423,11 +456,31 @@ class GameView(arcade.View):
     def on_update(self, delta_time):
         """ Movement and game logic """
 
-        # update frame count
+        # self.time += delta_time
         self.frames += 1
         if self.frames % 60 == 0:
-            self.time += 1
+            self.time+=1
+
+        # if self.frame_count%60==0:
+        #     self.frame_count = 0
+        #     if self.fps_start_timer is not None:
+        #         total_time = timeit.default_timer() - self.fps_start_timer
+        #         self.fps = 60 / total_time
+        #     self.fps_start_timer = timeit.default_timer()
+        # self.frame_count+=1
+
+        # if int(self.fps) != int(self.current_update_rate):
+        #     if self.fps < 60:
+        #         self.current_update_rate = self.fps
+        #         self.window.set_update_rate(1/self.current_update_rate)
+        #     else:
+        #         self.current_update_rate = 60
+        #         self.window.set_update_rate(1/self.current_update_rate)
+
+
         # Move the player with the physics engine
+        # self.player_sprite.change_x *= (60/current_fps)
+        # self.player_sprite.change_y *= (60/current_fps)
         self.physics_engine.update()
 
         if self.physics_engine.is_on_ladder():
@@ -456,7 +509,7 @@ class GameView(arcade.View):
 
         self.wall_list.update()
 
-        for wall in self.wall_list:
+        for wall in self.moving_platforms_list:
 
             if wall.boundary_right and wall.right > wall.boundary_right and wall.change_x > 0:
                 wall.change_x *= -1
@@ -539,10 +592,16 @@ class GameView(arcade.View):
                                 self.view_bottom,
                                 SCREEN_HEIGHT + self.view_bottom)
 
+        # arcade.set_viewport(max(self.player_sprite.center_x - SCREEN_WIDTH/2, 0),
+        #                         min(self.player_sprite.center_x + SCREEN_WIDTH/2, SCREEN_WIDTH),
+        #                         max(self.player_sprite.center_y - SCREEN_HEIGHT/2, 0),
+        #                         min(self.player_sprite.center_y + SCREEN_HEIGHT/2, SCREEN_HEIGHT))
+
 def main():
     """ Main method """
     #Views
-    window = arcade.Window(SCREEN_WIDTH, SCREEN_HEIGHT, SCREEN_TITLE)
+    window = arcade.Window(SCREEN_WIDTH, SCREEN_HEIGHT, SCREEN_TITLE, update_rate=1/60)
+    window.center_window()
     start_view = InstructionView(1, 0)
     window.show_view(start_view)
     arcade.run()
