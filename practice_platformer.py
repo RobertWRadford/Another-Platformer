@@ -8,8 +8,10 @@ import timeit
 
 # Constants
 
-SCREEN_WIDTH = arcade.get_screens()[0].width
-SCREEN_HEIGHT = arcade.get_screens()[0].height-50
+# SCREEN_WIDTH = arcade.get_screens()[0].width
+# SCREEN_HEIGHT = arcade.get_screens()[0].height-50
+SCREEN_WIDTH = 1280
+SCREEN_HEIGHT = 720
 
 SCREEN_TITLE = "Platformer"
 
