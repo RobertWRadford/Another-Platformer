@@ -5,20 +5,15 @@ import math
 from typing import Optional
 import arcade
 import ctypes
-import os
-import sys
-
-if getattr(sys, 'frozen', False) and hasattr(sys, '_MEIPASS'):
-    os.chdir(sys._MEIPASS)
 
 # Constants
+SCREEN_WIDTH = 1920
+SCREEN_HEIGHT = 1080
+
 if hasattr(ctypes, 'windll'):
     user32 = ctypes.windll.user32
     SCREEN_WIDTH = user32.GetSystemMetrics(0)
     SCREEN_HEIGHT = user32.GetSystemMetrics(1)
-else:
-    SCREEN_WIDTH = 1920
-    SCREEN_HEIGHT = 1080
 SCREEN_TITLE = "Platformer"
 
 # SCREEN_WIDTH = 500
