@@ -602,7 +602,10 @@ def main():
     #Views
     window = arcade.Window(SCREEN_WIDTH, SCREEN_HEIGHT, SCREEN_TITLE, update_rate=1/45)
     window.center_window()
-    start_view = InstructionView(1, 0)
+    try:
+        start_view = InstructionView(1, 0)
+    except:
+        window.close()
     window.show_view(start_view)
     arcade.run()
 
