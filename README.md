@@ -6,7 +6,7 @@ This is a very simple platformer I built in 5 days to learn some basics and get 
 
 Click on the practice_platformer.rar filename, and then in the upper right of the file information box hit download, and then decompress it. Then you can make a shortcut of the practice_platformer.exe file in the practice_platofrmer folder you decompressed and put it where ever you like and launch the program with it.
 
-The A and D keys move your character left and right, SPACE key jumps, W and S move you up and down on a ladder, R resets the current stage without resetting the timer, and L completely resets the game to level 1 with 0 seconds on the timer. I hope you have fun with it!
+The A and D keys move your character left and right, SPACE key jumps, W and S move you up and down on a ladder, R resets the current stage without resetting the timer, L completely resets the game to level 1 with 0 seconds on the timer, escape key closes the application, and F toggles fullscreen. I hope you have fun with it!
 
 
 ### DEV NOTE:
